@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wissenstest: Ur- und Frühgeschichte</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+        }
+        .question-block {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .question {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 15px 0;
+            color: #333;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 8px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .matching-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .matching-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .matching-table input {
+            width: 50px;
+            text-align: center;
+            padding: 5px;
+        }
+        .difficulty {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+        .easy {
+            background-color: #90EE90;
+            color: #006400;
+        }
+        .medium {
+            background-color: #FFD700;
+            color: #8B4500;
+        }
+        .hard {
+            background-color: #FF6B6B;
+            color: white;
+        }
+        .section-title {
+            background: #764ba2;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 30px 0 20px 0;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            resize: vertical;
+        }
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏛️ Wissenstest: Ur- und Frühgeschichte</h1>
+        <p>Die Metallzeit und frühe Gesellschaften</p>
+        <p style="font-size: 0.9em; margin-top: 15px;">Name: _________________ | Datum: _________________</p>
+    </div>
+
+    <div class="info-box">
+        <strong>📋 Hinweise zum Test:</strong><br>
+        • Bearbeitungszeit: ca. 45 Minuten<br>
+        • Lies alle Fragen sorgfältig durch<br>
+        • Bei Multiple-Choice-Fragen können eine oder mehrere Antworten richtig sein<br>
+        • Punkte: Insgesamt 100 Punkte erreichbar
+    </div>
+
+    <div class="section-title">📅 Teil 1: Zeitliche Einordnung</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 1</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Ordne die folgenden Epochen zeitlich korrekt von der ältesten zur jüngsten:</div>
+        <div class="options">
+            A) Eisenzeit – B) Kupferzeit – C) Altsteinzeit – D) Jungsteinzeit – E) Bronzezeit<br><br>
+            Richtige Reihenfolge: <input type="text" placeholder="z.B. C, D, B, E, A">
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 2</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">In welchem ungefähren Zeitraum fand die Metallzeit statt?</div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q2" value="a"> a) 10.000 v. Chr. bis 5.000 v. Chr.
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="b"> b) 3.000 v. Chr. bis Christi Geburt
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="c"> c) 5.000 v. Chr. bis 2.000 v. Chr.
+            </div>
+            <div class="option">
+                <input type="radio" name="q2" value="d"> d) 1.000 v. Chr. bis 500 n. Chr.
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(3 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 3</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Wann wurde Bronze als metallischer Werkstoff entdeckt?</div>
+        <div class="options">
+            Ungefähr um: <input type="text" placeholder="Jahr eingeben"> v. Chr.
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(4 Punkte)</p>
+    </div>
+
+    <div class="section-title">⚒️ Teil 2: Metallverarbeitung und Technologie</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 4</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Welche Aussagen über Kupfer und Bronze sind korrekt? (Mehrere Antworten möglich)</div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" name="q4a"> a) Kupfer war zu weich für Alltagswerkzeuge
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q4b"> b) Bronze entsteht durch Mischung von Kupfer mit Eisen
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q4c"> c) Bronze ist härter als reines Kupfer
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q4d"> d) Die Verarbeitung von Kupfer war der erste wichtige Fortschritt
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q4e"> e) Bronze wird durch Mischung von Kupfer mit Zinn hergestellt
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(6 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 5</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Warum wurde Kupfer hauptsächlich für Schmuckgegenstände verwendet und nicht für alltägliche Werkzeuge?</div>
+        <div class="options">
+            <textarea rows="3" placeholder="Deine Antwort hier..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 6</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Erkläre den Unterschied zwischen Bronze (Legierung) und Eisen in Bezug auf ihre Eigenschaften und Verwendung.</div>
+        <div class="options">
+            <textarea rows="4" placeholder="Deine Antwort hier..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(7 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 7</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Welches Metall ist bis heute das wichtigste und am weitesten verbreitete auf der Erde?</div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q7" value="a"> a) Kupfer
+            </div>
+            <div class="option">
+                <input type="radio" name="q7" value="b"> b) Bronze
+            </div>
+            <div class="option">
+                <input type="radio" name="q7" value="c"> c) Eisen
+            </div>
+            <div class="option">
+                <input type="radio" name="q7" value="d"> d) Gold
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(3 Punkte)</p>
+    </div>
+
+    <div class="section-title">👷 Teil 3: Berufe und Gesellschaft</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 8</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Ordne die Berufe den richtigen Tätigkeitsbeschreibungen zu. Schreibe die Nummer des Berufs in die Klammer:</div>
+        <div class="options">
+            <strong>Berufe:</strong> 1) Bergmann, 2) Schmied, 3) Gießer, 4) Köhler, 5) Gerber, 6) Töpfer, 7) Händler, 8) Hausbauer, 9) Hirte, 10) Weber<br><br>
+            
+            <table class="matching-table">
+                <tr>
+                    <td>Aus Baumstämmen kann er Kohle erzeugen, die mehr Hitze abgibt</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Seine Aufgabe ist das Hüten und Betreuen der Haustiere</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Zu seiner Arbeit gehört das Herumreisen, er tauscht verschiedene Waren</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Er verarbeitet Holzstämme zu festen Häusern, die die Menschen bewohnen</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Das heiße, flüssige Metall gießt er in verschiedene Formen</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Er formt aus Ton Gefäße und Behälter, die am Ende durch Brennen härtet</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Er bearbeitet das Metall und erzeugt daraus Waffen und Werkzeuge</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+                <tr>
+                    <td>Er verarbeitet die Haut der Tiere und macht daraus Leder</td>
+                    <td>( <input type="text"> )</td>
+                </tr>
+            </table>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(8 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 9</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Was bedeutete die entstehende Arbeitsteilung in der Jungsteinzeit für die Gesellschaft?</div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q9" value="a"> a) Alle Menschen mussten die gleiche Arbeit machen
+            </div>
+            <div class="option">
+                <input type="radio" name="q9" value="b"> b) Spezialisten wurden wichtiger und neue Berufe entstanden
+            </div>
+            <div class="option">
+                <input type="radio" name="q9" value="c"> c) Die Menschen arbeiteten weniger als zuvor
+            </div>
+            <div class="option">
+                <input type="radio" name="q9" value="d"> d) Es gab keine Veränderungen in der Gesellschaft
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(4 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 10</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Was war das Lösungswort des Berufe-Rätsels aus dem Schulbuch?</div>
+        <div class="options">
+            <input type="text" placeholder="Lösungswort aus 10 Buchstaben">
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(2 Punkte)</p>
+    </div>
+
+    <div class="section-title">🏠 Teil 4: Lebensbedingungen</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 11</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Wodurch unterschied sich die Jungsteinzeit von der Altsteinzeit? (Mehrere Antworten möglich)</div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" name="q11a"> a) Menschen wurden sesshaft und bauten feste Behausungen
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q11b"> b) Sie betrieben Ackerbau und Viehzucht
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q11c"> c) Sie lebten weiterhin nur vom Jagen und Sammeln
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q11d"> d) Die ersten Nutztiere wurden gehalten
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q11e"> e) Die Bevölkerung nahm ab
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 12</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Warum war Salz in der Metallzeit so wichtig und wertvoll wie Gold?</div>
+        <div class="options">
+            <textarea rows="3" placeholder="Nenne mindestens zwei Gründe..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 13</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Welche wichtige Erfindung der Jungsteinzeit wird im Text besonders hervorgehoben?</div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q13" value="a"> a) Das Feuer
+            </div>
+            <div class="option">
+                <input type="radio" name="q13" value="b"> b) Das Rad
+            </div>
+            <div class="option">
+                <input type="radio" name="q13" value="c"> c) Die Schrift
+            </div>
+            <div class="option">
+                <input type="radio" name="q13" value="d"> d) Der Webstuhl
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(3 Punkte)</p>
+    </div>
+
+    <div class="section-title">🗿 Teil 5: Religion und Kultur</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 14</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Was ist ein "Jagdzauber" und welchen Zweck hatte er in der Altsteinzeit?</div>
+        <div class="options">
+            <textarea rows="3" placeholder="Deine Antwort hier..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 15</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Die Menschen der Steinzeit sahen in Naturerscheinungen (Donner, Blitz...) übernatürliche Kräfte. Wie nannte man diese Glaubensvorstellungen?</div>
+        <div class="options">
+            <input type="text" placeholder="Deine Antwort">
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(3 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 16</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Was sind Grabbeigaben und warum wurden sie den Toten mitgegeben?</div>
+        <div class="options">
+            <textarea rows="3" placeholder="Erkläre beides..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 17</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Die Venus von Willendorf - welche der folgenden Aussagen sind nach neuesten Forschungen korrekt?</div>
+        <div class="options">
+            <div class="option">
+                <input type="checkbox" name="q17a"> a) Sie wurde 1908 in der Wachau gefunden
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q17b"> b) Die Figur stammt aus Italien
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q17c"> c) Sie ist aus Kalkstein gefertigt
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q17d"> d) Sie ist ca. 27.000 Jahre alt
+            </div>
+            <div class="option">
+                <input type="checkbox" name="q17e"> e) Sie wurde am Fundort Willendorf hergestellt
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(5 Punkte)</p>
+    </div>
+
+    <div class="section-title">🏛️ Teil 6: Historisches Wissen</div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 18</span>
+        <span class="difficulty medium">Mittel</span>
+        <div class="question">Welches Königreich gründeten die Kelten im heutigen Österreich?</div>
+        <div class="options">
+            <div class="option">
+                <input type="radio" name="q18" value="a"> a) Hallstatt
+            </div>
+            <div class="option">
+                <input type="radio" name="q18" value="b"> b) Noricum
+            </div>
+            <div class="option">
+                <input type="radio" name="q18" value="c"> c) Vindobona
+            </div>
+            <div class="option">
+                <input type="radio" name="q18" value="d"> d) Carnuntum
+            </div>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(3 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 19</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Wann wurde das Königreich Noricum ungefähr von den Römern besetzt?</div>
+        <div class="options">
+            <input type="text" placeholder="Jahr eingeben"> v. Chr.
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(4 Punkte)</p>
+    </div>
+
+    <div class="question-block">
+        <span class="question-number">Frage 20</span>
+        <span class="difficulty hard">Schwer</span>
+        <div class="question">Erkläre, was die Begriffe "arm" und "reich" mit dem Aufkommen von Metallen in der Gesellschaft zu tun hatten.</div>
+        <div class="options">
+            <textarea rows="4" placeholder="Deine ausführliche Antwort..."></textarea>
+        </div>
+        <p style="margin-left: 20px; color: #666; font-size: 0.9em;">(7 Punkte)</p>
+    </div>
+
+    <div class="info-box" style="margin-top: 40px; background: #fff3cd; border-left-color: #ffc107;">
+        <strong>✅ Geschafft!</strong><br>
+        Überprüfe deine Antworten sorgfältig, bevor du den Test abgibst.<br>
+        <strong>Viel Erfolg!</strong> 🍀
+    </div>
+
+    <div style="margin-top: 30px; padding: 20px; background: white; border-radius: 8px; text-align: center;">
+        <p><strong>Punkteübersicht:</strong></p>
+        <p>Erreichte Punkte: _____ / 100</p>
+        <p>Note: _____</p>
+    </div>
+
+</body>
+</html>
